@@ -11,4 +11,12 @@ public class ContactListScreen extends BaseScreen{
 
     @FindBy (xpath = "")
     AndroidElement activityTextView;
+
+
+
+    public boolean isContactListDisplayed(String text){
+
+      //  return activityTextView.getText().contains("Contact List"); //need wait
+        return isShouldHave(activityTextView,text,8);
+    }
 }

@@ -33,5 +33,8 @@ public class AuthenticationScreen extends BaseScreen{
         return this;
     }
 
-
+    public  ContactListScreen submitLogin(){    //return new screen
+        loginBtn.click();
+        return new ContactListScreen(driver);
+    }
 }
