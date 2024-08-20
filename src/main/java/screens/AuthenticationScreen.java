@@ -2,7 +2,12 @@ package screens;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidElement;
+import models.Auth;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class AuthenticationScreen extends BaseScreen{
 
@@ -14,17 +19,19 @@ public class AuthenticationScreen extends BaseScreen{
      //user.setEmail("pap@gmail.com");
 //        user.setPassword("@1234567Qq@");
 
-    @FindBy (xpath = "")
+    @FindBy (xpath = "//*[@resource-id = 'com.sheygam.contactapp:id/inputEmail']")
     AndroidElement emailEditText;
 
-    @FindBy (xpath = "")
+    @FindBy (id = "com.sheygam.contactapp:id/inputPassword")
     AndroidElement passwordEditText;
 
-    @FindBy (xpath = "")
+    @FindBy (xpath = "//*[@text ='LOGIN']")
     AndroidElement loginBtn;
 
     public AuthenticationScreen fillEmail(String email){
-        type(emailEditText, email);
+        //pause(500);
+        shold(emailEditText,10);
+        type (emailEditText, email);
        return this;
     }
 
@@ -36,5 +43,27 @@ public class AuthenticationScreen extends BaseScreen{
     public  ContactListScreen submitLogin(){    //return new screen
         loginBtn.click();
         return new ContactListScreen(driver);
+    }
+
+    public AuthenticationScreen fillLoginRegistrationForm(Auth auth) {
+        shold(emailEditText,10);
+        type(emailEditText, auth.getEmail());
+        type(passwordEditText, auth.getPassword());
+        return  this;
+    }
+
+    public AuthenticationScreen submitLoginNegative() {
+        loginBtn.click();
+        return this;
+    }
+
+    public AuthenticationScreen isErrorMessageContainsText(String text) {
+        Alert alert = new WebDriverWait(driver,10)
+                .until(ExpectedConditions.alertIsPresent());
+        driver.switchTo().alert();
+        Assert.assertTrue(alert.getText().contains(text));
+        alert.accept();
+
+        return this;
     }
 }
