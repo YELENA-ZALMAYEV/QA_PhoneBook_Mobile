@@ -28,6 +28,9 @@ public class AuthenticationScreen extends BaseScreen{
     @FindBy (xpath = "//*[@text ='LOGIN']")
     AndroidElement loginBtn;
 
+    @FindBy(xpath = "//*[@text = 'REGISTRATION']")
+    AndroidElement registrBtn;
+
     public AuthenticationScreen fillEmail(String email){
         //pause(500);
         shold(emailEditText,10);
@@ -42,6 +45,11 @@ public class AuthenticationScreen extends BaseScreen{
 
     public  ContactListScreen submitLogin(){    //return new screen
         loginBtn.click();
+        return new ContactListScreen(driver);
+    }
+
+    public ContactListScreen submitRegistr(){
+        registrBtn.click();
         return new ContactListScreen(driver);
     }
 

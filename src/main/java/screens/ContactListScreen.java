@@ -24,7 +24,7 @@ public class ContactListScreen extends BaseScreen{
     public boolean isActivityTitleDisplayed(String text){
 
       //  return activityTextView.getText().contains("Contact List"); //need wait
-        return isShouldHave(activityTextView,text,8);
+        return isShouldHave(activityTextView,text,15);
     }
 
     public  AuthenticationScreen logout(){
