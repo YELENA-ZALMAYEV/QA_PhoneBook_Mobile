@@ -16,7 +16,7 @@ public class AuthenticationScreen extends BaseScreen{
         super(driver);
     }
 
-     //user.setEmail("pap@gmail.com");
+     //user.setEmail("try@gmail.com");
 //        user.setPassword("@1234567Qq@");
 
     @FindBy (xpath = "//*[@resource-id = 'com.sheygam.contactapp:id/inputEmail']")

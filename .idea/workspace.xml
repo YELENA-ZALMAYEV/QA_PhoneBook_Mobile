@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88d2e55c-6b77-44fc-8453-e0391257c133" name="Changes" comment="LoginTests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,21 +68,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.LaunchTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LaunchTest.launch.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginSuccess.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginSuccessModel.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RegistrationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RegistrationTests.registrationSuccess.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Qa_26/PhoneBook&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.LaunchTest.executor": "Run",
+    "Gradle.LaunchTest.launch.executor": "Run",
+    "Gradle.LoginTests.executor": "Run",
+    "Gradle.LoginTests.loginSuccess.executor": "Run",
+    "Gradle.LoginTests.loginSuccessModel.executor": "Run",
+    "Gradle.RegistrationTests.executor": "Run",
+    "Gradle.RegistrationTests.registrationSuccess.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Qa_26/PhoneBook"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.RegistrationTests">
     <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>

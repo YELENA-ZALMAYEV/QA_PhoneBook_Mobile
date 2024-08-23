@@ -26,7 +26,7 @@ public class AppiumConfig {
        public void setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName","Android");
-        capabilities.setCapability("deviceName","qa");
+        capabilities.setCapability("deviceName","QA");
         capabilities.setCapability("platformVersion","8.0");
         capabilities.setCapability("appPackage","com.sheygam.contactapp");
         capabilities.setCapability("appActivity", ".SplashActivity");

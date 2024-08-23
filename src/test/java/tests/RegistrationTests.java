@@ -12,7 +12,7 @@ public class RegistrationTests extends AppiumConfig {
 
         int i = (int)(System.currentTimeMillis()/1000)%3600;
 
-        boolean result = new AuthenticationScreen(driver).fillEmail("pip"+i+"a@gmail.com")
+        boolean result = new AuthenticationScreen(driver).fillEmail("hobbi"+i+"t@gmail.com")
                 .fillPassword("@1234567Qq@")
                 .submitRegistr()
                 .isActivityTitleDisplayed("Contact list");
