@@ -40,4 +40,16 @@ public class ContactListScreen extends BaseScreen{
         Assert.assertTrue(isActivityTitleDisplayed("Contact list"));
         return  this;
     }
+
+
+    public ContactListScreen errorMassege() {
+       Assert.assertTrue(isActivityTitleDisplayed("must be well-formed email address"));
+        return this;
+    }
+     public ContactListScreen errorMassege1(String text){
+        checkAlertText(text);
+        return  this;
+     }
+
+
 }
