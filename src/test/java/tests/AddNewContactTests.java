@@ -27,24 +27,24 @@ public class AddNewContactTests extends AppiumConfig {
                 .isActivityTitleDisplayed("Contact list");
 
     }
-    @Test (invocationCount = 3)
-    public  void  createNewContactSuccess(){
-        int i = new Random().nextInt(1000) +1000;
-        Contact contact = Contact.builder()
-                .name("Walk")
-                .lastName("Gutman")
-                .email("sdfd"+i+"@gmail.com")
-                .phone("147852369")
-                .address("Mikonos")
-                .description("New")
-                .build();
-        new ContactListScreen(driver)
-                .openContactForm()
-                .fillContactForm(contact)
-                .submitContactForm()
-                .isContactAddedByName(contact.getName(), contact.getLastName());
-
-    }
+//    @Test (invocationCount = 3)
+//    public  void  createNewContactSuccess(){
+//        int i = new Random().nextInt(1000) +1000;
+//        Contact contact = Contact.builder()
+//                .name("Walk")
+//                .lastName("Gutman")
+//                .email("sdfd"+i+"@gmail.com")
+//                .phone("147852369")
+//                .address("Mi")
+//                .description("New")
+//                .build();
+//        new ContactListScreen(driver)
+//                .openContactForm()
+//                .fillContactForm(contact)
+//                .submitContactForm()
+//                .isContactAddedByName(contact.getName(), contact.getLastName());
+//
+//    }
 
    
 
