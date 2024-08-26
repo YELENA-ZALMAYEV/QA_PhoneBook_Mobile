@@ -105,11 +105,8 @@ public class ContactListScreen extends BaseScreen{
             }
         }
         Assert.assertTrue(isPresent);
-
         return this;
     }
-
-
 
     public ContactListScreen deleteFirstContact() {
         isActivityTitleDisplayed("Contact list");

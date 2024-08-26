@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import screens.AuthenticationScreen;
 import screens.ContactListScreen;
 
+
 import java.util.Random;
 
 public class AddNewContactTests extends AppiumConfig {
@@ -41,7 +42,8 @@ public class AddNewContactTests extends AppiumConfig {
                 .openContactForm()
                 .fillContactForm(contact)
                 .submitContactForm()
-                isContactAddedByName(contact.getName(), contact.getLastName());
+                .isContactAddedByName(contact.getName(), contact.getLastName());
+
     }
 
    
