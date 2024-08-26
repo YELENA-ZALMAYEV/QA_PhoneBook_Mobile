@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88d2e55c-6b77-44fc-8453-e0391257c133" name="Changes" comment="LoginTests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewContactTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DeleteContactTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/build.gradle" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/tests/LoginTests.java" root0="SKIP_INSPECTION" />
@@ -79,6 +82,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.AddNewContactTests.createNewWithEmptyName.executor": "Run",
     "Gradle.LaunchTest.executor": "Run",
     "Gradle.LaunchTest.launch.executor": "Run",
     "Gradle.LoginTests.executor": "Run",
@@ -101,8 +105,8 @@
     "last_opened_file_path": "D:/Qa_26/PhoneBook"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.RegistrationTests.registrationWrongPassword">
-    <configuration name="RegistrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AddNewContactTests.createNewWithEmptyName">
+    <configuration name="AddNewContactTests.createNewWithEmptyName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -115,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.RegistrationTests&quot;" />
+            <option value="&quot;tests.AddNewContactTests.createNewWithEmptyName&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -224,11 +228,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegistrationTests.registrationWrongPassword" />
+        <item itemvalue="Gradle.AddNewContactTests.createNewWithEmptyName" />
         <item itemvalue="Gradle.RegistrationTests.registrationWrongEmail" />
+        <item itemvalue="Gradle.RegistrationTests.registrationWrongPassword" />
         <item itemvalue="Gradle.RegistrationTests.registrationSuccessModel" />
         <item itemvalue="Gradle.RegistrationTests.postCondition" />
-        <item itemvalue="Gradle.RegistrationTests" />
       </list>
     </recent_temporary>
   </component>

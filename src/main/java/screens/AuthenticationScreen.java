@@ -74,11 +74,13 @@ public class AuthenticationScreen extends BaseScreen{
 
         return this;
     }
+
     
     public AuthenticationScreen errorMassege(String text){
         checkAlertText(text);
         return  this;
     }
+
 
     public AuthenticationScreen submitRegistratioNegative() {
         registrBtn.click();
