@@ -1,8 +1,10 @@
 package tests;
 
 import config.AppiumConfig;
+import io.appium.java_client.android.AndroidElement;
 import models.Auth;
 import models.Contact;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -39,8 +41,11 @@ public class AddNewContactTests extends AppiumConfig {
                 .openContactForm()
                 .fillContactForm(contact)
                 .submitContactForm()
-                .isContactAddedByName(contact.getName(), contact.getLastName());
+                isContactAddedByName(contact.getName(), contact.getLastName());
     }
+
+   
+
 
     @Test
     public  void  createContactSuccessReq(){
@@ -68,4 +73,5 @@ public class AddNewContactTests extends AppiumConfig {
     public void  postCondition(){
         new ContactListScreen(driver).logout();
     }
+
 }

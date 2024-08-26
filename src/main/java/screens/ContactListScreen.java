@@ -93,25 +93,22 @@ public class ContactListScreen extends BaseScreen{
         return new AddNewContactScreen(driver);
     }
 
+    public ContactListScreen isContactAddedByName (String name, String lastName){
+        isShouldHave(activityTextView, "Contact list", 5);
+        System.out.println("size of list" + contactNameList.size());
+        boolean isPresent = false;
 
-    public ContactListScreen isContactAddedByName(String name,String lastName){
-        // List<AndroidElement> list =  driver.findElements(By.xpath(""));
-        isShouldHave(activityTextView,"Contact list",5);
-        System.out.println("size of list " +contactNameList.size());
-        boolean isPresent=false;
-
-        for (AndroidElement el: contactNameList) {
-            if(el.getText().equals(name + " "+lastName)){
+        for (AndroidElement el: contactNameList){
+            if (el.getText().equals(name + "" + lastName)){
                 isPresent = true;
                 break;
             }
-
         }
-
         Assert.assertTrue(isPresent);
 
         return this;
     }
+
 
 
     public ContactListScreen deleteFirstContact() {
