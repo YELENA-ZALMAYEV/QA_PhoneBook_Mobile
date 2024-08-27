@@ -37,6 +37,14 @@ public class ContactListScreen extends BaseScreen{
    List< AndroidElement>  contactList;
 
 
+    @FindBy(id = "android:id/button1")
+    AndroidElement OkBtn;
+
+    @FindBy (id = "com.sheygam.contactapp:id/emptyTxt")
+            AndroidElement noContactsHere;
+
+int countBefore;
+int countAfter;
 
 
     public boolean isActivityTitleDisplayed(String text){
@@ -110,6 +118,10 @@ public class ContactListScreen extends BaseScreen{
 
     public ContactListScreen deleteFirstContact() {
         isActivityTitleDisplayed("Contact list");
+
+        countBefore = contactList.size();
+        System.out.println(countBefore);
+
         AndroidElement first = contactList.get(0);
         Rectangle rectangle = first.getRect();
         int xFrom=rectangle.getX()+ rectangle.getWidth()/8;
@@ -120,7 +132,32 @@ public class ContactListScreen extends BaseScreen{
         TouchAction<?> touchAction = new TouchAction<>(driver);
         touchAction.longPress(PointOption.point(xFrom,y)).moveTo(PointOption.point(xTo,y)).release().perform();
 
-
+        shold(OkBtn, 8); //+ locator
+        OkBtn.click();
+        pause(1500);
+        countAfter = contactList.size();
+        System.out.println(countAfter);
         return this;
+
+    }
+
+    public ContactListScreen isListSitheLessThenOn() {
+
+        Assert.assertEquals(countBefore-countAfter,1);
+        return  this;
+    }
+
+    public  ContactListScreen removeAllContacts(){
+        pause(1000);
+        while(contactList.size()>0){
+            deleteFirstContact();
+        }
+        return  this;
+    }
+
+    public ContactListScreen isNoContactsHere() {
+       isShouldHave(noContactsHere, "No Contacts/ Add One more", 10);
+       return  this;
+
     }
 }

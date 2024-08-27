@@ -43,7 +43,6 @@ public class AddNewContactTests extends AppiumConfig {
 //                .fillContactForm(contact)
 //                .submitContactForm()
 //                .isContactAddedByName(contact.getName(), contact.getLastName());
-//
 //    }
 
    
